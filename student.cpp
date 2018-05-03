@@ -17,5 +17,21 @@ void student::setName(string f, string l)
     lastName = l;
 
 }
+void student::addGrade(double value)
+{
+    grade.push_back(value);  
+}
+
+double student::getScore()
+{
+    double number;
+
+    for(int i = 0; i < grade.size(); i++)
+    {
+        number = number + grade[i];
+    }
+
+    return number = number / grade.size();
+}
 
 

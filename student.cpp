@@ -30,8 +30,14 @@ double student::getScore()
     {
         number = number + grade[i];
     }
-
+    if(grade.size() != 0)
+    {
     return number = number / grade.size();
+    }
+    else
+    {
+    return 0;
+    }
 }
 
 
